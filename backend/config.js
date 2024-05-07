@@ -9,8 +9,8 @@ const PORT = +process.env.PORT || 3001;
 
 const getDatabaseUri = () => {
     return (process.env.NODE_ENV === "test")
-        ? "postgres:///test_learning_db"
-        : process.env.DATABASE_URL || "postgres:///learning_db";
+        ? "postgres://ycfybpsu:WzJwf-vNzrixMDFx9YXfbFy22tvSY9eQ@bubble.db.elephantsql.com/ycfybpsu"
+        : process.env.DATABASE_URL || "postgres://etbomuac:8oMj_PNlV74lsS3Htaz1kjVU7h54JfOQ@bubble.db.elephantsql.com/etbomuac";
 }
 
 const BCRYPT_WORK_FACTOR = process.env.NODE_ENV === "test" ? 1 : 12;
